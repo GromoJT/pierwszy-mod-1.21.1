@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pierwszy-mod",
+	"version": "${version}",
+	"name": "pierwszy Mod",
+	"description": "To pierwszy mod wykonany za pomocą tutoriala",
+	"authors": [
+		"GromoTJ"
+	],
+	"contact": {
+		"homepage": "https://tomaszcomasz.pl/",
+		"sources": "https://github.com/gromotj/pierwszy-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/pierwszy-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"pl.gromotj.pierwszymod.PierwszyMod"
+		],
+		"fabric-datagen": [
+			"pl.gromotj.pierwszymod.PierwszyModDataGenerator"
+		],
+		"client": [
+			"pl.gromotj.pierwszymod.PierwszyModClient"
+		]
+	},
+	"mixins": [
+		"pierwszy-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
